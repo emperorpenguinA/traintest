@@ -26,7 +26,7 @@ SECRET_KEY = 'u#l50i$f9_@d3=6!@%na@0fhfp8+z9(_pha*%16%qt6!#6iak5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['penguinaaa.pythonanywhere.com']
 
 
 # Application definition
