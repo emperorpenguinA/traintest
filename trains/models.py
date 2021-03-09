@@ -31,7 +31,7 @@ class Item(models.Model):
     )
     thumnail = models.ImageField(
         verbose_name='画像',
-        upload_to = 'images',
+        upload_to = 'images/',
         blank=True,
         null=True
     )
