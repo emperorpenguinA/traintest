@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-3">
+        <p>列車名</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.name }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>所属路線</p>
+    </div>
+    <div class="col-9">
+        {% for data in item.route.all %}
+        <p>{{ data.route_name }}</p>
+        {% endfor %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>画像</p>
+    </div>
+    <div class="col-9">
+        <img src="{{ item.thumnail.url }}" style="width:300px;height:auto">
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>説明</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.memo|linebreaksbr }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>登録日</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.created_at|date:"Y/m/d G:i:s" }}</p>
+    </div>
+</div>
