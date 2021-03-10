@@ -1,4 +1,4 @@
-project/__pycache__/*.pyc
-trains/__pycache__/*.pyc
+*.pyc
+__pycache__/
 **/local_settings.py
 db.sqlite3

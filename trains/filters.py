@@ -16,9 +16,11 @@ class ItemFilter(FilterSet):
         # tuple-mapping retains order
         fields=(
             ('name', 'name'),
+            ('route', 'route'),
         ),
         field_labels={
             'name': '氏名',
+            'route': '所属路線開業時期',
         },
         label='並び順'
     )
